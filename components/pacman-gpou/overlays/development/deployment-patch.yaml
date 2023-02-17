@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman-gpou
+  namespace: abrarenrh-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d4e3037dc5a6de5540276680c7742d9c7526a0ceeba9fd7dc63ae8ebdb8886ce
+        name: my-nodejs
+        resources: {}
+status: {}
