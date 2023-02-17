@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: pacman-gpou
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:J-xvh-pacman-gpou
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d4e3037dc5a6de5540276680c7742d9c7526a0ceeba9fd7dc63ae8ebdb8886ce
         name: my-nodejs
         ports:
         - containerPort: 3001
